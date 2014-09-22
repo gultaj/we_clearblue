@@ -539,8 +539,8 @@ li.pagination {
 }
 
 .pagination span strong {
-	padding: 0 2px;
-	margin: 0 2px;
+	padding: 0 4px;
+	margin: 0 1px;
 	font-weight: normal;
 	color: #FFFFFF;
 	background-color: #bfbfbf;
@@ -552,8 +552,8 @@ li.pagination {
 	font-weight: normal;
 	text-decoration: none;
 	color: #747474;
-	margin: 0 2px;
-	padding: 0 2px;
+	margin: 0 1px;
+	padding: 0 4px;
 	background-color: #eeeeee;
 	border: 1px solid #bababa;
 	font-size: 0.9em;

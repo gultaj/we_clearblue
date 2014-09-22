@@ -68,11 +68,11 @@ hr.dashed {
 }
 
 span.corners-top, span.corners-bottom {
-	background-image: url("{T_THEME_PATH}/images/corners_left.png");
+	/*background-image: url("{T_THEME_PATH}/images/corners_left.png");*/
 }
 
 span.corners-top span, span.corners-bottom span {
-	background-image: url("{T_THEME_PATH}/images/corners_right.png");
+	/*background-image: url("{T_THEME_PATH}/images/corners_right.png");*/
 }
 
 /* Horizontal lists
@@ -771,19 +771,19 @@ ul.cplist {
 
 /* Topicreview */
 #cp-main .panel #topicreview span.corners-top, #cp-menu .panel #topicreview span.corners-top {
-	background-image: url("{T_THEME_PATH}/images/corners_left.gif");
+	/*background-image: url("{T_THEME_PATH}/images/corners_left.gif");*/
 }
 
 #cp-main .panel #topicreview span.corners-top span, #cp-menu .panel #topicreview span.corners-top span {
-	background-image: url("{T_THEME_PATH}/images/corners_right.gif");
+	/*background-image: url("{T_THEME_PATH}/images/corners_right.gif");*/
 }
 
 #cp-main .panel #topicreview span.corners-bottom, #cp-menu .panel #topicreview span.corners-bottom {
-	background-image: url("{T_THEME_PATH}/images/corners_left.gif");
+	/*background-image: url("{T_THEME_PATH}/images/corners_left.gif");*/
 }
 
 #cp-main .panel #topicreview span.corners-bottom span, #cp-menu .panel #topicreview span.corners-bottom span {
-	background-image: url("{T_THEME_PATH}/images/corners_right.gif");
+	/*background-image: url("{T_THEME_PATH}/images/corners_right.gif");*/
 }
 
 /* Friends list */
