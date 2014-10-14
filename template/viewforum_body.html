@@ -132,7 +132,7 @@
 		<td class="topic">
 			<h4 abr>
 				<!-- IF topicrow.ATTACH_ICON_IMG -->{topicrow.ATTACH_ICON_IMG}<!-- ENDIF --> 
-				<a href="<!-- IF topicrow.S_UNREAD_TOPIC -->{topicrow.U_LAST_POST}<!-- ELSE -->{topicrow.U_VIEW_TOPIC}<!-- ENDIF --> " class="topictitle">{topicrow.TOPIC_TITLE}</a>
+				<a href="<!-- IF topicrow.S_UNREAD_TOPIC -->{topicrow.U_NEWEST_POST}<!-- ELSE -->{topicrow.U_VIEW_TOPIC}<!-- ENDIF --> " class="topictitle">{topicrow.TOPIC_TITLE}</a>
 				<!-- IF topicrow.S_TOPIC_UNAPPROVED or topicrow.S_POSTS_UNAPPROVED --><a href="{topicrow.U_MCP_QUEUE}">{topicrow.UNAPPROVED_IMG}</a> <!-- ENDIF -->
 				<!-- IF topicrow.S_TOPIC_REPORTED --><a href="{topicrow.U_MCP_REPORT}">{REPORTED_IMG}</a><!-- ENDIF -->
 			</h4>
