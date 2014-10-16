@@ -130,8 +130,9 @@
 	<tr class="<!-- IF topicrow.S_ROW_COUNT is even -->bg1<!-- ELSE -->bg2<!-- ENDIF --><!-- IF topicrow.S_POST_GLOBAL --> global-announce<!-- ENDIF --><!-- IF topicrow.S_POST_ANNOUNCE --> announce<!-- ENDIF --><!-- IF topicrow.S_POST_STICKY --> sticky<!-- ENDIF --><!-- IF topicrow.S_TOPIC_REPORTED --> reported<!-- ENDIF -->">
 		<td class="icon bg2" style="background-image: url({topicrow.TOPIC_FOLDER_IMG_SRC});" title="{topicrow.TOPIC_FOLDER_IMG_ALT}"><!-- IF topicrow.TOPIC_ICON_IMG and S_TOPIC_ICONS --><img src="{T_ICONS_PATH}{topicrow.TOPIC_ICON_IMG}" alt="" title="" /><!-- ENDIF --></td>
 		<td class="topic">
-			<h4>
-				<!-- IF topicrow.ATTACH_ICON_IMG -->{topicrow.ATTACH_ICON_IMG}<!-- ENDIF --> <a href="{topicrow.U_VIEW_TOPIC}" class="topictitle">{topicrow.TOPIC_TITLE}</a>
+			<h4 abr>
+				<!-- IF topicrow.ATTACH_ICON_IMG -->{topicrow.ATTACH_ICON_IMG}<!-- ENDIF --> 
+				<a href="<!-- IF topicrow.S_UNREAD_TOPIC -->{topicrow.U_NEWEST_POST}<!-- ELSE -->{topicrow.U_VIEW_TOPIC}<!-- ENDIF --> " class="topictitle">{topicrow.TOPIC_TITLE}</a>
 				<!-- IF topicrow.S_TOPIC_UNAPPROVED or topicrow.S_POSTS_UNAPPROVED --><a href="{topicrow.U_MCP_QUEUE}">{topicrow.UNAPPROVED_IMG}</a> <!-- ENDIF -->
 				<!-- IF topicrow.S_TOPIC_REPORTED --><a href="{topicrow.U_MCP_REPORT}">{REPORTED_IMG}</a><!-- ENDIF -->
 			</h4>

@@ -501,7 +501,7 @@ dl.codebox + br {
 ----------------------------------------*/
 .attachbox {
 	float: left;
-	width: auto; 
+	width: 98.5%; 
 	margin: 5px 5px 5px 0;
 	padding: 6px;
 	background-color: #FFFFFF;
@@ -517,12 +517,17 @@ dl.codebox + br {
 	font-family: "Open Sans", Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 }
-
+.attachbox > dt {
+	margin-bottom: -5px;
+}
 .attachbox dd {
 	margin-top: 4px;
 	padding-top: 4px;
 	clear: left;
 	border-top: 1px solid #d8d8d8;
+}
+.attachbox > dd {
+	margin-top: 10px;
 }
 
 .attachbox dd dd {
@@ -547,14 +552,19 @@ dl.codebox + br {
 .attach-image {
 	margin: 3px 0;
 	width: 100%;
-	max-height: 350px;
+	max-height: 500px;
 	overflow: auto;
 }
 
 .attach-image img {
 	border: 1px solid #999999;
 /*	cursor: move; */
-	cursor: default;
+	cursor: pointer;
+	max-width: 99%;
+}
+.file .full-width {
+	float: right;
+	font-size: 1.2em;
 }
 
 /* Inline image thumbnails */
