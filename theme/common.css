@@ -112,9 +112,10 @@ p.right {
 }
 
 #illustration {
-	background: url("{T_THEME_PATH}/images/illustration2.png") top right no-repeat;
+	background: url("{T_THEME_PATH}/images/header.png") top right no-repeat;
 	height: 199px;
 	margin: -6px auto 0;
+	position: relative;
 }
 
 #container {
@@ -185,8 +186,10 @@ p.right {
 /* Site name and description
 --------------------------------------------- */
 #site-description {
-	margin-top: 60px;
-	margin-left: 75px;
+	/* margin-top: 60px;
+	margin-left: 75px; */
+	right: 40px;
+	top: 60px;
 	position: absolute;
 }
 
@@ -194,6 +197,12 @@ p.right {
 	font-size: 48px;
 	font-weight: normal;
 	color: #103143;
+}
+#site-description a {
+	background: url("{T_THEME_PATH}/images/logo.png") no-repeat;
+	height: 90px;
+	width: 400px;	
+	display: block;
 }
 #site-description h1 a:hover {
 	text-decoration: none;

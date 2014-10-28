@@ -50,6 +50,7 @@ html>body dd label input { vertical-align: text-bottom; }	/* Align checkboxes/ra
 	padding-left: 20px;
 	position: absolute;
 	margin-top: -20px;
+	margin-left: 10px;
 }
 
 /* viewtopic fix */
