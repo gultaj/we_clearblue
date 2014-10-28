@@ -51,6 +51,7 @@ html>body dd label input { vertical-align: text-bottom; }	/* Align checkboxes/ra
 	position: absolute;
 	margin-top: -20px;
 	margin-left: 10px;
+	font-size: 1.4em;
 }
 
 /* viewtopic fix */
