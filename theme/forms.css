@@ -38,7 +38,7 @@ option.disabled-option {
 }
 
 textarea {
-	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
 	width: 60%;
 	padding: 2px;
 	font-size: 1em;
@@ -314,7 +314,7 @@ input.button1, input.button2 {
 a.button1, input.button1, input.button3, a.button2, input.button2 {
 	width: auto !important;
 	padding: 2px 5px;
-	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
 	color: #000;
 	background: #FAFAFA none repeat-x top left;
 }
