@@ -50,6 +50,7 @@ html>body dd label input { vertical-align: text-bottom; }	/* Align checkboxes/ra
 	padding-left: 20px;
 	position: absolute;
 	margin-top: -20px;
+	margin-left: 10px;
 	font-size: 1.4em;
 }
 
@@ -118,4 +119,12 @@ dl.icon {
 
 * html #footer-fixed {
 	display: none;
+}
+a.forumtopic {
+	font-size: 12px;
+	color: #898989 !important;
+	font-weight: 400;
+}
+a.forumtopic:hover {
+	color: #BC2A4D !important;
 }

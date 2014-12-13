@@ -52,8 +52,10 @@
 					<!-- IF searchresults.TOPIC_ICON_IMG --><img src="{T_ICONS_PATH}{searchresults.TOPIC_ICON_IMG}" alt="" title="" /><!-- ENDIF -->
 				</td>
 				<td class="topic">
+					
 					<h4><!-- IF searchresults.ATTACH_ICON_IMG -->{searchresults.ATTACH_ICON_IMG}<!-- ENDIF --> 
 						<a href="<!-- IF searchresults.S_UNREAD_TOPIC -->{searchresults.U_NEWEST_POST}<!-- ELSE -->{searchresults.U_VIEW_TOPIC}<!-- ENDIF -->" class="topictitle">{searchresults.TOPIC_TITLE}</a>
+						<a href="{searchresults.U_VIEW_FORUM}" class="forumtopic">&laquo; {searchresults.FORUM_TITLE}</a>
 					</h4>
 					<!-- IF searchresults.PAGINATION --><strong class="pagination"><span>{searchresults.PAGINATION}</span></strong><!-- ENDIF -->
 					<p>{L_POST_BY_AUTHOR} {searchresults.TOPIC_AUTHOR_FULL} &raquo; {searchresults.FIRST_POST_TIME}</p>
