@@ -1,6 +1,8 @@
 <!-- INCLUDE overall_header.html -->
 
 <h2><a href="{U_VIEW_FORUM}">{FORUM_NAME}</a></h2>
+<p class="breadcrumbs">{L_JUMP_TO}: <a href="{U_INDEX}" title="{SITENAME}" accesskey="h">{L_INDEX}</a> <!-- BEGIN navlinks --> &rsaquo; <a href="{navlinks.U_VIEW_FORUM}" title="{navlinks.FORUM_NAME}">{navlinks.FORUM_NAME}</a><!-- END navlinks --></p>
+
 <!-- IF MODERATORS --><p><strong><!-- IF S_SINGLE_MODERATOR -->{L_MODERATOR}<!-- ELSE -->{L_MODERATORS}<!-- ENDIF -->:</strong> {MODERATORS}</p><!-- ENDIF -->
 
 <!-- IF S_FORUM_RULES -->

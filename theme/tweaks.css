@@ -128,3 +128,6 @@ a.forumtopic {
 a.forumtopic:hover {
 	color: #BC2A4D !important;
 }
+div#container .breadcrumbs {
+	font-size: 13px;
+}
