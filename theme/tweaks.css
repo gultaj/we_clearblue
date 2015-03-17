@@ -1,5 +1,5 @@
-/* 
-These style definitions are mainly IE specific 
+/*
+These style definitions are mainly IE specific
 tweaks required due to its poor CSS support.
 -------------------------------------------------*/
 
@@ -32,12 +32,12 @@ html>body dd label input { vertical-align: text-bottom; }	/* Align checkboxes/ra
 * html .column1, * html .column2 { width: 45%; }
 
 /* Nice method for clearing floated blocks without having to insert any extra markup (like spacer above)
-   From http://www.positioniseverything.net/easyclearing.html 
+   From http://www.positioniseverything.net/easyclearing.html
 #tabs:after, #minitabs:after, .post:after, .navbar:after, fieldset dl:after, ul.topiclist dl:after, ul.linklist:after, dl.polls:after {
-	content: "."; 
-	display: block; 
-	height: 0; 
-	clear: both; 
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
 	visibility: hidden;
 }*/
 
@@ -131,3 +131,42 @@ a.forumtopic:hover {
 div#container .breadcrumbs {
 	font-size: 13px;
 }
+
+
+/* SOCIAL BUTTONS */
+
+.postbody h3 { float: left; }
+.social_share { float: right}
+p.author { clear: both; }
+.social_link {
+	display: inline-block;
+	margin-right: 1px;
+	border-radius: 2px;
+}
+.social_link:active { height: 16px; }
+.social_icon {
+	width: 18px;
+	height: 18px;
+	display: block;
+	background: url("{T_THEME_PATH}/images/social_buttons.png");
+}
+.social_ok { background-color: #ff9f4d; }
+.social_ok:hover { background-color: #cc7f3e; }
+.social_ok:active{border-top: 2px solid #975e2e;}
+
+.social_tw { background-color: #00aced; }
+.social_tw:hover { background-color: #008abe; }
+.social_tw:active {border-top: 2px solid #00668d;}
+
+.social_fb { background-color: #3c5a98; }
+.social_fb:hover { background-color: #30487a; }
+.social_fb:active {border-top: 2px solid #24365a;}
+
+.social_vk { background-color: #48729e; }
+.social_vk:hover { background-color: #3a5b7e; }
+.social_vk:active {border-top: 2px solid #2b445e;}
+
+.social_icon_vk { background-position: 0 -58px; }
+.social_icon_fb { background-position: 0 0; }
+.social_icon_tw { background-position: 0 -87px; }
+.social_icon_ok { background-position: 0 -116px; }
