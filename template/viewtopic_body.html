@@ -143,16 +143,16 @@
 
 			<h3 <!-- IF postrow.S_FIRST_ROW -->class="first"<!-- ENDIF -->><!-- IF postrow.POST_ICON_IMG --><img src="{T_ICONS_PATH}{postrow.POST_ICON_IMG}" width="{postrow.POST_ICON_IMG_WIDTH}" height="{postrow.POST_ICON_IMG_HEIGHT}" alt="" /> <!-- ENDIF --><a href="#p{postrow.POST_ID}">{postrow.POST_SUBJECT}</a></h3>
 			<!-- PHP -->
-			https://www.facebook.com/dialog/feed?app_id=725954197518177&display=popup&name=Заголовок&description=Много текста&link=http://forum.lida.info/viewtopic.php?f=3&t=2956&redirect_uri=https://www.facebook.com&picture=http://forum.lida.info/styles/we_clearblue/theme/images/header.png
+			https://www.facebook.com/dialog/feed?app_id=725954197518177&display=page&name={postrow.ENC_POST_SUBJECT}&description={postrow.ENC_MESSAGE}&link=encodeURI({U_TOPIC}#p{postrow.POST_ID})&redirect_uri=https://www.facebook.com&picture=http://forum.lida.info/styles/we_clearblue/theme/images/header.png
 			<!-- ENDPHP -->
 			<div class="social_share">
-				<a href="http://vk.com/share.php?url=#p{postrow.POST_ID}&title={enc_title}&description={postrow.MESSAGE}&noparse=true" class="social_link social_vk">
+				<a href="http://vk.com/share.php?url=#p{postrow.POST_ID}&title={enc_title}&description&noparse=true" class="social_link social_vk">
 					<span class="social_icon social_icon_vk"></span>
 				</a>
-				<a onClick="window.open('http://www.facebook.com/sharer/sharer.php?s=100&amp;p[title]={postrow.ENC_POST_SUBJECT}&p[summary]={postrow.ENC_MESSAGE}&p[url]={U_TOPIC}#p{postrow.POST_ID}','sharer','toolbar=0,status=0,width=700,height=400');" href="javascript: void(0)" target="_blank" class="social_link social_fb">
+				<a onClick="window.open('https://www.facebook.com/dialog/feed?app_id=725954197518177&display=popup&name={postrow.ENC_POST_SUBJECT}&description={postrow.ENC_MESSAGE}&link={postrow.FULL_URL}&redirect_uri=http%3A%2F%2Fforum.lida.info%23close_window&picture=http://forum.lida.info/styles/we_clearblue/theme/images/header.png','sharer','toolbar=0,status=0,width=700,height=400');" href="javascript: void(0)" target="_blank" class="social_link social_fb">
 					<span class="social_icon social_icon_fb"></span>
 				</a>
-				<a href="https://www.facebook.com/dialog/feed?app_id=145634995501895&display=popup&name={postrow.ENC_POST_SUBJECT}&redirect_uri={U_TOPIC}#p{postrow.POST_ID}&description={postrow.ENC_MESSAGE}" class="social_link social_tw">
+				<a href="https://www.facebook.com/dialog/feed?app_id=145634995501895&display=popup&name={postrow.ENC_POST_SUBJECT}&redirect_uri={postrow.FULL_URL}&description={postrow.ENC_MESSAGE}" class="social_link social_tw">
 					<span class="social_icon social_icon_tw"></span>
 				</a>
 				<a href="" class="social_link social_ok">
